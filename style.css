@@ -1,0 +1,246 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo a{
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.logo img{
+    width: 70px; 
+    height: auto;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.menu{
+    float: right;
+}
+
+#home img{
+    max-width: 55%;
+    margin-top: -5%;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #96cacd;
+    z-index: 1;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'cambria';
+    color: #000000;
+}
+
+.kolom .deskripsi2{
+    font-size: 20px;
+    font-family: 'times new roman';
+    color: #000000;
+    margin-top: -5%;
+}
+
+a.tbl-biru{
+    background: #FE4E6D;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover{
+    background: #0095ff;
+    text-decoration: none;
+}
+
+a.tbl-pink{
+    background: #FE4E6D;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover{
+    background: #0095ff;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: #ffffff;
+}
+
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+#services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.services .grid-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex-basis: 30%;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #555;
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.services .pre-title{
+    margin:  auto;
+}
+
+.services-title{
+    text-align: center;
+}
+
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 190px;
+}
+
+.search-form input[type="text"] {
+    width: 200px;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 2px solid #299DF2;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #79a9c4;
+    box-shadow: 0 0 8px rgba(41, 157, 242, 0.5);        
+}
+
+.search-form button {
+    padding: 0px 10px;
+    background-color: #299DF2;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #FE4E6D;
+}
+
+
+footer {
+    background-color: #587da1; /* Warna latar belakang */
+    color: #ecf0f1; /* Warna teks */
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+    padding: 20px 0; /* Ruang di atas dan bawah */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container p {
+    margin: 5px 0; /* Mengatur jarak antar paragraf */
+    font-size: 14px; /* Ukuran teks */
+  }
+  
+  footer p {
+    line-height: 1.6; /* Jarak antar baris */
+  }
+  
