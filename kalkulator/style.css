@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    background-color: rgba(177, 116, 162, 0.256);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    /*background-image: url('bg.jpg');*/
+    background-size: cover;
+}
+
+.card {
+    background-color: #f1f3f51f;
+    box-shadow: 5px 5px 12px rgb(0, 0, 0, 0.16);
+    width: 300px;
+    max-width: 100%; /* Menyesuaikan lebar sesuai layar */
+    height: 500px;
+    max-height: 90vh; /* Membatasi tinggi agar tidak keluar layar */
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.display {
+    background-color: #f1f3f5ec;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.display input {
+    background-color: transparent;
+    border: none;
+    text-align: end;
+    font-size: 30px;
+    outline: none;
+    width: 90%;
+}
+
+.button {
+    height: 70%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tombol-kiri {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tombol {
+    background-color: #f1f3f5;
+    box-shadow: inset 5px 5px 12px #0000003e, 5px 5px 12px rgba(255, 255, 255, 0.16);
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: tomato;
+}
+
+.tombol:hover {
+    transform: scale(0.9);
+}
+
+.tombol-kanan {
+    background-color: rgba(14, 14, 14, 0.411);
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 12px rgb(0, 0, 0, 0.26);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Lebar maksimum 90% dari layar */
+        height: auto; /* Tinggi otomatis agar tidak fix */
+    }
+
+    .display input {
+        font-size: 24px; /* Kurangi ukuran font untuk layar tablet */
+    }
+
+    .tombol-kiri {
+        grid-template-columns: auto auto; /* Kurangi jumlah kolom menjadi 2 */
+    }
+
+    .tombol {
+        height: 45px;
+        width: 45px; /* Kecilkan tombol */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 95%; /* Lebar maksimum 95% dari layar */
+        padding: 10px; /* Kurangi padding pada layar kecil */
+    }
+
+    .display input {
+        font-size: 20px; /* Ukuran font lebih kecil untuk smartphone */
+    }
+
+    .button {
+        margin-top: 10px; /* Kurangi margin atas */
+    }
+
+    .tombol-kiri {
+        width: 100%; /* Lebar penuh untuk tombol kiri */
+        grid-template-columns: auto; /* Hanya satu tombol per baris */
+    }
+
+    .tombol {
+        height: 40px;
+        width: 40px; /* Kecilkan tombol */
+    }
+
+    .tombol-kanan {
+        width: 25%; /* Kurangi lebar untuk tombol kanan */
+    }
+}

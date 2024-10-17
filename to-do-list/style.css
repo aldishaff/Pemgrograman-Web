@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cambria', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b0058;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.todo-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.add-btn {
+    background-color: #ff007a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background 0.3s;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.add-btn:hover {
+    background-color: #e6006f;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Gaya untuk task text sebagai input */
+.task-text {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    width: 80%;
+    padding: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+/* Saat task-text di-edit (fokus), border akan berubah */
+.task-text:focus {
+    border-bottom: 2px solid #ff007a;
+}
+
+/* Gaya untuk action buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .save-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #fdfdfd;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.edit-btn:hover, .save-btn:hover, .delete-btn:hover {
+    color: #e6006f;
+}
+
+/* Animasi untuk menambahkan task */
+.add-animation {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animasi untuk menghapus task */
+.remove-animation {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+/* Keyframes untuk animasi fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes untuk animasi fadeOut */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .todo-card {
+        width: 90%; /* Sesuaikan lebar dengan perangkat tablet */
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 36px; /* Ubah ukuran font untuk tablet */
+    }
+
+    #todo-input, .add-btn {
+        font-size: 14px; /* Sesuaikan ukuran input dan tombol */
+    }
+
+    #todo-list li {
+        padding: 12px; /* Kurangi padding untuk tampilan lebih kompak */
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-card {
+        width: 95%; /* Sesuaikan lebar untuk perangkat kecil seperti ponsel */
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 28px; /* Ubah ukuran font lebih kecil untuk ponsel */
+    }
+
+    #todo-input, .add-btn {
+        font-size: 12px; /* Kurangi ukuran input dan tombol */
+    }
+
+    #todo-list li {
+        padding: 10px; /* Sesuaikan padding untuk tampilan ponsel */
+    }
+}
